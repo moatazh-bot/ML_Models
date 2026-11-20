@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="housing_yes <= 0.5\nsamples = 100.0%\nvalue = [0.883, 0.117]\nclass = no", fillcolor="#e89253"] ;
+1 [label="poutcome_success <= 0.5\nsamples = 44.3%\nvalue = [0.832, 0.168]\nclass = no", fillcolor="#ea9a61"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="month_mar <= 0.5\nsamples = 42.0%\nvalue = [0.862, 0.138]\nclass = no", fillcolor="#e99559"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+3788 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3788 ;
+3963 [label="job_technician <= 0.5\nsamples = 2.3%\nvalue = [0.277, 0.723]\nclass = yes", fillcolor="#85c3ef"] ;
+1 -> 3963 ;
+3964 [label="(...)", fillcolor="#C0C0C0"] ;
+3963 -> 3964 ;
+4287 [label="(...)", fillcolor="#C0C0C0"] ;
+3963 -> 4287 ;
+4340 [label="duration <= 520.5\nsamples = 55.7%\nvalue = [0.924, 0.076]\nclass = no", fillcolor="#e78b49"] ;
+0 -> 4340 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+4341 [label="month_sep <= 0.5\nsamples = 49.4%\nvalue = [0.966, 0.034]\nclass = no", fillcolor="#e68540"] ;
+4340 -> 4341 ;
+4342 [label="(...)", fillcolor="#C0C0C0"] ;
+4341 -> 4342 ;
+5789 [label="(...)", fillcolor="#C0C0C0"] ;
+4341 -> 5789 ;
+5834 [label="duration <= 870.5\nsamples = 6.3%\nvalue = [0.59, 0.41]\nclass = no", fillcolor="#f7d8c2"] ;
+4340 -> 5834 ;
+5835 [label="(...)", fillcolor="#C0C0C0"] ;
+5834 -> 5835 ;
+6650 [label="(...)", fillcolor="#C0C0C0"] ;
+5834 -> 6650 ;
+}
